@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+  <head>
+  </head>
+  <body>
+    <h1 id="zone">TimeZone API</h1>
+    <h1 id="currenttime">Your Current Time Zone</h1>
+    <div id="location">
+        <span class="spa">Name of Time zone:</span> <span class="mar" id="timezone"></span><br>
+    <span class="spa">Lat:</span><span class="mar" id="latitude"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="spa">Long:</span> <span class="mar" id="longitude"></span><br>
+      <span class="spa">Offeset STD:</span> <span class="mar" id="std_offset"></span><br>
+      <span class="spa">Offeset STD Seconds:</span> <span class="mar" id="std_offset_seconds"></span><br>
+      <span class="spa">Offset DST:</span> <span class="mar" id="dst_offset"></span><br>
+      <span class="spa">Offset DST Seconds:</span> <span  class="mar"id="dst_offset_seconds"></span><br>
+      <span class="spa">Country:</span> <span class="mar" id="country"></span><br>
+      <span class="spa">Postcode: </span><span class="mar" id="postcode"></span><br>
+      <span class="spa">City:</span> <span class="mar" id="city"></span>
+    </div>
+    
+    <div id="entire">
+    <div class="search-sec">
+        <div class="searchbox">
+            <h1 id="enter">Enter Address</h1>
+            <form onsubmit="return search()">
+                <input type="text" id="inputbox" placeholder="Address">
+                <button id="submitbtn">submit</button> 
+            </form>
+        </div>
+    </div>
+    <div id="tomove">
+    <p id="error" class="hide">Please enter an  address!</p>
+    <div class="result-container hide" id="resultcont">
+        <div id="mov">
+        <h1 style="background-color: black;color: white;">Your Result</h1>
+        <div class="data-container result">
+            <p>Name of TimeZone : <span id="name"></span></p>
+            <div class="cords">
+                <p class="lat">Lat:<span id="lati"></span></p>
+                <p class="long">Long:<span id="longi"></span></p>
+            </div>
+            <p>Offset STD : <span id="offSTD"></span></p>
+            <p>Offset STD Seconds : <span id="offSTDsec"></span></p>
+            <p>Offset DST : <span id="offDST"></span></p>
+            <p>Offset DST Seconds : <span id="offDSTsec"></span></p>
+            <p>Country : <span id="country-r"></span></p>
+            <p>PostCode : <span id="postt"></span></p>
+            <p>City : <span id="city-r"></span></p>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+  
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
